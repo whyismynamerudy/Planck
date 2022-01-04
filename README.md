@@ -7,6 +7,8 @@ The MySQL database that was locally created and used during the development of t
 
 To see a working version of the app, view the screenshots below:
 
-
+![login](https://github.com/whyismynamerudy/todoJavaApplication/blob/7cb9d0fe93761da3d43b34d3eb5c85906478e868/screenshots/Screenshot%202022-01-03%20215738.png)
+![signup](https://github.com/whyismynamerudy/todoJavaApplication/blob/7cb9d0fe93761da3d43b34d3eb5c85906478e868/screenshots/Screenshot%202022-01-03%20215834.png)
+![dashboard](https://github.com/whyismynamerudy/todoJavaApplication/blob/7cb9d0fe93761da3d43b34d3eb5c85906478e868/screenshots/Screenshot%202022-01-03%20220149.png)
 
 I had also created a video which showcased the functionality of the application, but I cannot upload the video because it was used as a part of my assessment for this course, and I do not want to risk plagiarism if the video is seen by those currently in this course.
