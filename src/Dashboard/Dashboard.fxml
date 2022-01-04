@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.Dashboard">
+   <children>
+      <TabPane fx:id="biggestTabPane" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-pref-height: 107; -fx-pref-width: 50;">
+              <graphic>
+                  <Group>
+                      <Label text="Account">
+                        <padding>
+                           <Insets top="8.0" />
+                        </padding></Label>
+                  </Group>
+              </graphic>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="59.0" layoutY="156.0" text="First Name:" />
+                        <Label layoutX="60.0" layoutY="207.0" text="Last Name:" />
+                        <Label layoutX="48.0" layoutY="261.0" text="Date of Birth:" />
+                        <TextField fx:id="accountFirstName" editable="false" layoutX="135.0" layoutY="151.0" prefHeight="25.0" prefWidth="205.0" />
+                        <TextField fx:id="accountLastName" editable="false" layoutX="135.0" layoutY="202.0" prefHeight="25.0" prefWidth="205.0" />
+                        <ListView fx:id="accountListView" layoutX="132.0" layoutY="359.0" prefHeight="169.0" prefWidth="552.0" />
+                        <Label layoutX="70.0" layoutY="313.0" prefHeight="10.0" prefWidth="47.0" text="Subjects:" />
+                        <TextField fx:id="accountSubject" editable="false" layoutX="132.0" layoutY="309.0" prefHeight="25.0" prefWidth="356.0" />
+                        <Button fx:id="accountAddSubject" disable="true" layoutX="500.0" layoutY="309.0" mnemonicParsing="false" onAction="#accountAddSubject" text="Add Subject" />
+                        <Button fx:id="accountDeleteSubject" disable="true" layoutX="592.0" layoutY="309.0" mnemonicParsing="false" onAction="#accountDeleteSubject" text="Delete Subject" />
+                        <Button fx:id="accountEditButton" layoutX="648.0" layoutY="540.0" mnemonicParsing="false" onAction="#editAccount" text="Edit" />
+                        <DatePicker fx:id="accountDateOfBirth" editable="false" layoutX="134.0" layoutY="256.0" prefHeight="25.0" prefWidth="231.0" />
+                        <Label layoutX="409.0" layoutY="155.0" text="New Password:" />
+                        <Label layoutX="387.0" layoutY="206.0" text="Re-Enter Password:" />
+                        <PasswordField fx:id="accountNewPassword" layoutX="504.0" layoutY="151.0" prefHeight="25.0" prefWidth="181.0" />
+                        <PasswordField fx:id="accountReEnterPassword" layoutX="505.0" layoutY="202.0" prefHeight="25.0" prefWidth="180.0" />
+                        <Button fx:id="accountSavePassword" layoutX="591.0" layoutY="236.0" mnemonicParsing="false" onAction="#changePassword" text="Save Password" />
+                        <Text layoutX="358.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="141.0" fitWidth="212.0" layoutX="208.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../startUp/a5960d004b44a98ddf48bc3e69c9af8e_resize%20copy.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="dashboardTab" style="-fx-pref-height: 107; -fx-pref-width: 50;">
+              <graphic>
+                  <Group>
+                      <Label text="Dashboard">
+                        <padding>
+                           <Insets top="22.0" />
+                        </padding></Label>
+                  </Group>
+              </graphic>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="dashboardTimetableImage" fitHeight="337.0" fitWidth="449.0" layoutX="24.0" layoutY="18.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@ingmar-hoogerhoud-7BT7apop-GY-unsplash.jpg" />
+                           </image></ImageView>
+                        <AnchorPane layoutX="24.0" layoutY="356.0" prefHeight="245.0" prefWidth="747.0">
+                           <children>
+                              <Label layoutX="53.0" layoutY="17.0" text="Title:" />
+                              <Label layoutX="27.0" layoutY="57.0" text="Due Date:" />
+                              <Label layoutX="40.0" layoutY="104.0" text="Priority:" />
+                              <Label layoutX="52.0" layoutY="152.0" text="Type:" />
+                              <Label layoutX="40.0" layoutY="199.0" text="Subject:" />
+                              <Label layoutX="352.0" layoutY="57.0" text="Description:" />
+                              <TextField fx:id="dashboardTaskTitle" layoutX="91.0" layoutY="13.0" prefHeight="25.0" prefWidth="625.0" />
+                              <DatePicker fx:id="dashboardTaskDueDate" layoutX="92.0" layoutY="53.0" prefWidth="200.0" />
+                              <ChoiceBox fx:id="dashboardTaskPriority" layoutX="92.0" layoutY="100.0" prefHeight="25.0" prefWidth="200.0" />
+                              <ChoiceBox fx:id="dashboardTaskType" layoutX="92.0" layoutY="148.0" prefHeight="25.0" prefWidth="200.0" />
+                              <ChoiceBox fx:id="dashboardTaskSubject" layoutX="92.0" layoutY="195.0" prefHeight="25.0" prefWidth="200.0" />
+                              <TextArea fx:id="dashboardTaskDescription" layoutX="424.0" layoutY="56.0" prefHeight="119.0" prefWidth="292.0" />
+                              <Button onAction="#saveTaskDashboard" layoutX="456.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Save" />
+                              <Button onAction="#completeTaskDashboard" layoutX="590.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Complete" />
+                           </children></AnchorPane>
+                        <TabPane layoutX="517.0" layoutY="18.0" prefHeight="337.0" prefWidth="221.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab style="-fx-pref-width: 103;" text="Homework">
+                                 <content>
+                                    <ListView fx:id="dashboardListHomework" onMouseClicked="#beginEditingDashboardHomework" prefHeight="200.0" prefWidth="200.0" />
+                                 </content></Tab>
+                            <Tab closable="false" style="-fx-pref-width: 102;" text="To-Do">
+                                 <content>
+                                    <ListView fx:id="dashboardListToDo" onMouseClicked="#beginEditingDashboardToDo" prefHeight="200.0" prefWidth="200.0" />
+                                 </content></Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab style="-fx-pref-height: 107; -fx-pref-width: 50;">
+                <graphic>
+                    <Group>
+                        <Label text="Homework">
+                        <padding>
+                           <Insets top="23.0" />
+                        </padding></Label>
+                    </Group>
+                </graphic>
+              <content>
+                <AnchorPane fx:id="homeworkAnchorPane" minHeight="0.0" minWidth="0.0" onMouseClicked="#noMoreEditing" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                         <Text layoutX="234.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework">
+                             <font>
+                                 <Font size="24.0" />
+                             </font>
+                         </Text>
+                         <ImageView fitHeight="141.0" fitWidth="212.0" layoutX="80.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                             <image>
+                                 <Image url="@../startUp/a5960d004b44a98ddf48bc3e69c9af8e_resize%20copy.png" />
+                             </image>
+                         </ImageView>
+                        <ListView fx:id="homeworkListHomework" layoutX="46.0" layoutY="155.0" onMouseClicked="#beginEditing" prefHeight="373.0" prefWidth="397.0" />
+                        <ImageView fx:id="homeworkCoverImage" fitHeight="610.0" fitWidth="286.0" layoutX="486.0" layoutY="1.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@ingmar-hoogerhoud-7BT7apop-GY-unsplash.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="140.0" layoutY="551.0" mnemonicParsing="false" onAction="#addHomework" prefHeight="25.0" prefWidth="210.0" text="+ Add Homework" />
+                        <MenuButton layoutX="403.0" layoutY="14.0" mnemonicParsing="false" text="...">
+                          <items>
+                            <MenuItem onAction="#sortDueDate" fx:id="dueDateSortHomework" mnemonicParsing="false" text="Sort By Due Date" />
+                            <MenuItem onAction="#sortPriority" fx:id="prioritySortHomework" mnemonicParsing="false" text="Sort By Priority" />
+                          </items>
+                        </MenuButton>
+                        <AnchorPane fx:id="homeworkDetailsPane" layoutX="486.0" layoutY="1.0" prefHeight="600.0" prefWidth="286.0">
+                           <children>
+                              <TextField fx:id="homeworkDetailsPaneTitle" alignment="CENTER" layoutX="18.0" layoutY="35.0" prefHeight="25.0" prefWidth="250.0" text="Title" />
+                              <Label layoutX="18.0" layoutY="99.0" text="Due Date:" />
+                              <Label layoutX="18.0" layoutY="156.0" text="Subject:" />
+                              <Label layoutX="19.0" layoutY="212.0" text="Priority:" />
+                              <Label layoutX="18.0" layoutY="268.0" text="Homework Type:" />
+                              <Label layoutX="19.0" layoutY="318.0" text="Description:" />
+                              <DatePicker fx:id="homeworkDetailsPaneDueDate" layoutX="118.0" layoutY="95.0" prefHeight="25.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="homeworkDetailsPaneSubject" layoutX="118.0" layoutY="152.0" prefHeight="25.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="homeworkDetailsPanePriority" layoutX="118.0" layoutY="208.0" prefHeight="25.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="homeworkDetailsPaneHomeworkType" layoutX="117.0" layoutY="264.0" prefHeight="25.0" prefWidth="150.0" />
+                              <TextArea fx:id="homeworkDetailsPaneDescription" layoutX="93.0" layoutY="318.0" prefHeight="210.0" prefWidth="173.0" />
+                              <Button layoutX="70.0" layoutY="551.0" mnemonicParsing="false" onAction="#saveEditedHomework" text="Save" />
+                              <Button layoutX="144.0" layoutY="551.0" mnemonicParsing="false" onAction="#completeHomework" text="Completed" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab style="-fx-pref-height: 107; -fx-pref-width: 50;">
+                <graphic>
+                    <Group>
+                        <Label text="To-Do">
+                        <padding>
+                           <Insets bottom="2.0" />
+                        </padding></Label>
+                    </Group>
+                </graphic>
+              <content>
+                <AnchorPane fx:id="toDoAnchorPane" minHeight="0.0" minWidth="0.0" onMouseClicked="#noMoreEditingToDo" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                         <Text layoutX="234.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Do">
+                             <font>
+                                 <Font size="24.0" />
+                             </font>
+                         </Text>
+                         <ImageView fitHeight="141.0" fitWidth="212.0" layoutX="80.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                             <image>
+                                 <Image url="@../startUp/a5960d004b44a98ddf48bc3e69c9af8e_resize%20copy.png" />
+                             </image>
+                         </ImageView>
+                         <ListView fx:id="toDoListHomework" layoutX="46.0" layoutY="155.0" onMouseClicked="#beginEditingToDo" prefHeight="373.0" prefWidth="397.0" />
+                         <ImageView fx:id="toDoCoverImage" fitHeight="610.0" fitWidth="286.0" layoutX="486.0" layoutY="1.0" pickOnBounds="true" visible="false">
+                             <image>
+                                 <Image url="@ingmar-hoogerhoud-7BT7apop-GY-unsplash.jpg" />
+                             </image>
+                         </ImageView>
+                         <Button layoutX="140.0" layoutY="551.0" mnemonicParsing="false" onAction="#addTask" prefHeight="25.0" prefWidth="210.0" text="+ Add Task" />
+                         <MenuButton layoutX="403.0" layoutY="14.0" mnemonicParsing="false" text="...">
+                             <items>
+                                 <MenuItem onAction="#sortDueDate" fx:id="dueDateSortToDo" mnemonicParsing="false" text="Sort By Due Date" />
+                                 <MenuItem onAction="#sortPriority" fx:id="prioritySortToDo" mnemonicParsing="false" text="Sort By Priority" />
+                             </items>
+                         </MenuButton>
+                         <AnchorPane fx:id="toDoDetailsPane" layoutX="486.0" layoutY="1.0" prefHeight="600.0" prefWidth="286.0">
+                             <children>
+                                 <TextField fx:id="toDoDetailsPaneTitle" alignment="CENTER" layoutX="18.0" layoutY="35.0" prefHeight="25.0" prefWidth="250.0" text="Title" />
+                                 <Label layoutX="18.0" layoutY="99.0" text="Due Date:" />
+                                 <Label layoutX="18.0" layoutY="154.0" text="Priority:" />
+                                 <Label layoutX="18.0" layoutY="210.0" text="Task Type:" />
+                                 <Label layoutX="18.0" layoutY="259.0" text="Description:" />
+                                 <DatePicker fx:id="toDoDetailsPaneDueDate" layoutX="118.0" layoutY="95.0" prefHeight="25.0" prefWidth="150.0" />
+                                 <ChoiceBox fx:id="toDoDetailsPanePriority" layoutX="118.0" layoutY="150.0" prefHeight="25.0" prefWidth="150.0" />
+                                 <ChoiceBox fx:id="toDoDetailsPaneHomeworkType" layoutX="117.0" layoutY="206.0" prefHeight="25.0" prefWidth="150.0" />
+                                 <TextArea fx:id="toDoDetailsPaneDescription" layoutX="94.0" layoutY="259.0" prefHeight="271.0" prefWidth="173.0" />
+                                 <Button layoutX="70.0" layoutY="551.0" mnemonicParsing="false" onAction="#saveEditedTask" text="Save" />
+                                 <Button layoutX="144.0" layoutY="551.0" mnemonicParsing="false" onAction="#completeTask" text="Completed" />
+                             </children>
+                         </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab style="-fx-pref-height: 107; -fx-pref-width: 50;">
+                <graphic>
+                    <Group>
+                        <Label text="Timetable">
+                        <padding>
+                           <Insets top="17.0" />
+                        </padding></Label>
+                    </Group>
+                </graphic>
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="timetableTimetableImage" fitHeight="559.0" fitWidth="759.0" layoutX="10.0" layoutY="3.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../startUp/a5960d004b44a98ddf48bc3e69c9af8e_resize%20copy.png" />
+                           </image></ImageView>
+                        <Button layoutX="303.0" layoutY="569.0" mnemonicParsing="false" onAction="#chooseTimeTable" text="Upload a copy of your timetable" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-47.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../startUp/a5960d004b44a98ddf48bc3e69c9af8e_resize%20copy.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

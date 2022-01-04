@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IADraft1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IADraft1_jar</output-path>
+    <root id="archive" name="IADraft1.jar">
+      <element id="module-output" name="IADraft1" />
+      <element id="extracted-dir" path="C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.18.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

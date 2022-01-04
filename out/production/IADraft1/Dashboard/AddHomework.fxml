@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="531.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.AddHomework">
+   <children>
+       <Text layoutX="210.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Homework">
+           <font>
+               <Font size="24.0" />
+           </font>
+       </Text>
+       <ImageView fitHeight="141.0" fitWidth="212.0" layoutX="60.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../startUp/a5960d004b44a98ddf48bc3e69c9af8e_resize%20copy.png" />
+           </image>
+       </ImageView>
+      <Label layoutX="55.0" layoutY="172.0" text="Title:" />
+      <Label layoutX="38.0" layoutY="265.0" text="Subject:" />
+      <Label layoutX="27.0" layoutY="220.0" text="Due Date:" />
+      <Label layoutX="264.0" layoutY="220.0" text="Priority:" />
+      <Label layoutX="215.0" layoutY="265.0" text="Homework Type:" />
+      <Label layoutX="18.0" layoutY="313.0" text="Description:" />
+      <TextField fx:id="addHomeworkTitle" layoutX="85.0" layoutY="168.0" prefHeight="25.0" prefWidth="374.0" />
+      <DatePicker fx:id="addHomeworkDueDate" layoutX="85.0" layoutY="216.0" prefHeight="25.0" prefWidth="126.0" />
+      <ChoiceBox fx:id="addHomeworkSubject" layoutX="84.0" layoutY="261.0" prefHeight="25.0" prefWidth="126.0" />
+      <ChoiceBox fx:id="addHomeworkPriority" layoutX="308.0" layoutY="216.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="addHomeworkType" layoutX="308.0" layoutY="261.0" prefWidth="150.0" />
+      <TextArea fx:id="addHomeworkDescription" layoutX="86.0" layoutY="313.0" prefHeight="167.0" prefWidth="374.0" />
+      <Button fx:id="addHomeworkSubmit" layoutX="198.0" layoutY="492.0" mnemonicParsing="false" onAction="#addHomework" text="Add Homework" />
+   </children>
+</AnchorPane>
