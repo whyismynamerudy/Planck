@@ -1,5 +1,5 @@
-# todoJavaApplication
-The To-Do/Homework Planner app I created as the final project for my IB CS HL Internal Assessment
+# Planck
+The To-Do/Homework Planner app, Planck, that I created as the final project for my IB CS HL Internal Assessment
 
 This application was created for the purposes of an internal assessment for my high school diploma; as such, it was created in such a way as to adhere to the constraints placed upon those in the diploma programme. It has been uploaded to this repository as a way to track my improvement over time.
 
