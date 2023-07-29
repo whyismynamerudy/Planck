@@ -1,9 +1,9 @@
 # Planck
-The To-Do/Homework Planner app, Planck, that I created as the final project for my IB CS HL Internal Assessment
+The To-Do/Homework Planner app, Planck.
 
-This application was created for the purposes of an internal assessment for my high school diploma; as such, it was created in such a way as to adhere to the constraints placed upon those in the diploma programme. It has been uploaded to this repository as a way to track my improvement over time.
+This application was created to solve an issue faced by a close friend of mine who struggled with managing and prioritizing his time between his extracurriculars and his academics. In the process of developipg this application, I met up with my friend multiple times to extract client requirements, which I used to inform the features of this product. At each stage in development, I consulted my friend, got his feedback, and gave him updates to ensure the product was able to meet his needs.
 
-The MySQL database that was locally created and used during the development of this application is exported and included in this repository for completion - it will not be edited to work with an online database in the near future. 
+The MySQL database that was locally created and used during the development of this application is exported and included in this repository for completion.
 
 To see a working version of the app, view the screenshots below:
 
@@ -11,4 +11,3 @@ To see a working version of the app, view the screenshots below:
 ![signup](https://github.com/whyismynamerudy/todoJavaApplication/blob/7cb9d0fe93761da3d43b34d3eb5c85906478e868/screenshots/Screenshot%202022-01-03%20215834.png)
 ![dashboard](https://github.com/whyismynamerudy/todoJavaApplication/blob/7cb9d0fe93761da3d43b34d3eb5c85906478e868/screenshots/Screenshot%202022-01-03%20220149.png)
 
-I had also created a video which showcased the functionality of the application, but I cannot upload the video because it was used as a part of my assessment for this course, and I do not want to risk plagiarism if the video is seen by those currently in this course.
